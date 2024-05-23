@@ -2,8 +2,14 @@ import Chai from "./components/Chai"
 function App() {
 
 
+  const username = "oh yeah chai aur Code"
+
   return (
-   <Chai/>
+    <>
+    
+    <Chai/>
+    <h1>chai aur code {username}</h1>
+    </>
   )
 }
 
