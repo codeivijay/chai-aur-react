@@ -1,8 +1,8 @@
-# This the chai aur react tutorial.
+# This is the chai aur react tutorial. by Hitesh Choudhary 
 
-# How rendering works now /' ?
+# How rendering works now after react 16 version?
 
-## Fiber Nodes :
+## Fiber Architecture/Nodes :
 
 - First react create Fiber tree  where each node or fiber represents component and its state. 
 - It is the fiber tree that enables react to break down rendering work into smaller units of work so that it can be paused, resumed and aborted as per the situation.
@@ -18,3 +18,9 @@
 ## React's Scheduler:
 
 - React’s internal scheduler prioritizes updates based on their urgency and importance, ensuring that the most critical updates are handled first while less important updates can be deferred.
+
+
+All these comes through 
+```javascirpt
+createRoot
+```
