@@ -14,8 +14,9 @@ function Github() {
   const data =  useLoaderData()
     
   return (
-    <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl '>
-      Github Followers: This is Status Code {data.statusCode}
+    <div className='text-center m-4 flex flex-row justify-around bg-gray-600 text-white p-4 text-3xl '>
+        <img src={data.avatar_url} alt="Git picture" width={300} />
+        <h1 className=''>Github Followers: {data.followers}</h1>
     </div>
   )
 }
@@ -23,6 +24,6 @@ function Github() {
 export default Github
 
 export const githubInfoLoader = async () => {
-    const response = await fetch('https://api.freeapi.app/api/v1/public/randomusers?page=1&limit=10')
+    const response = await fetch('https://api.github.com/users/codeivijay')
     return response.json()
 }
