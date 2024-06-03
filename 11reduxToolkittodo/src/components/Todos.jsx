@@ -6,7 +6,7 @@ function Todos() {
     const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
   return (
-    <>
+    <div className='px-4'>
     <ul className='list-none'>
         {todos.map((todo) => (
             <li
@@ -17,14 +17,15 @@ function Todos() {
                 <button 
                 onClick={() => dispatch(removeTodo(todo.id))}
                 className='
-                text-white bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-red-700 rounded text-base
+                text-white bg-red-600 border-0 py-1 px-2 focus:outline-none hover:bg-red-700 rounded text-base
                 '>❌</button>
             </li>
             
         ))}
 
     </ul>
-    </>
+
+    </div>
   )
 }
 
